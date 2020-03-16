@@ -1,0 +1,358 @@
+<html>
+    <head>
+        <title>Fireblast</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+       
+        <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-hidden="true" style="margin-top: 150px;">  
+            <div class="modal-dialog" role="document">
+                <div class="modal-titled">
+                    <h2>Connexion</h2>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form method="post" action="" style="margin-top: 10px;">
+                            <div class="col-md-6" style="padding-left: 0px">
+                                <label for="username" id="usernameConnexionLabel">Nom d'utilisateur (*)</label>
+                                <input type="text" name="usernamec" id="username" class="modal-input-form">
+                            </div>
+                            <div class="col-md-6" style="margin-bottom: 20px;">
+                                <label for="password" id="passwordConnexionLabel">Mot de passe (*)</label>
+                                <input type="password" name="passwordc" id="password" class="modal-input-form">
+                            </div>
+                            <div style="clear : both; padding-top : 10px; margin-bottom : 15px; border-bottom : 1px solid #2A3254;"></div>
+                            <input type="submit" name="loginButton" value="Connexion" class="btnc btnc-primary" style="margin-top : 0; float: left; margin-right: 10px;">
+                            <input type="button" class="btnc" style="float : left; margin-top : 0;" data-toggle="modal" data-dismiss="modal" data-target="#registermodal" value="Inscription">
+                            <div style="clear : both; padding-top : 15px; margin-bottom : 15px; border-bottom : 1px solid #2A3254;"></div>
+                            <a href="#">Mot de passe oublié ?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="registermodal" role="dialog" style="margin-top: 150px;">  
+            <div class="modal-dialog" role="document">
+                <div class="modal-titled">
+                    <h2>Inscription</h2>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form method="post" action="" style="margin-top: 10px;">
+                                <div class="col-md-12" style="padding-left: 0px">
+                                    <label for="username" id="usernameInscriptionLabel">Nom d'utilisateur (*)</label><br>
+                                    <input type="text" name="usernamer" id="username" class="modal-input-form">
+                                </div>
+                            <div style="clear : both; padding-top : 10px; margin-bottom : 15px; border-bottom : 1px solid #2A3254;"></div>
+                                <div class="col-md-6" style="margin-bottom: 20px; padding-left: 0px">
+                                    <label for="email" id="emailInscriptionLabel">Adresse e-mail (*)</label>
+                                    <input type="text" name="emailr" id="email" class="modal-input-form">
+                                </div>
+                                
+                                <div class="col-md-6" style="margin-bottom: 20px; padding-left: 0px">
+                                    <label for="emailc" id="emailcConnexionLabel">Confirmer l'adresse e-mail (*)</label>
+                                    <input type="text" name="emailrc" id="emailc" class="modal-input-form">
+                                </div>
+                            <div style="clear : both; padding-top : 10px; margin-bottom : 15px; border-bottom : 1px solid #2A3254;"></div>
+                                <div class="col-md-6" style="margin-bottom: 20px; padding-left: 0px">
+                                    <label for="password" id="passwordInscriptionLabel">Mot de passe (*)</label>
+                                    <input type="password" name="passwordr" id="password" class="modal-input-form">
+                                </div>
+                                
+                                <div class="col-md-6" style="margin-bottom: 20px; padding-left: 0px">
+                                    <label for="passwordc" id="passwordcInscriptionLabel">Confirmer le mot de passe (*)</label>
+                                    <input type="text" name="passwordrc" id="passwordc" class="modal-input-form">
+                                </div>
+                            <div style="clear : both; padding-top : 10px; margin-bottom : 15px; border-bottom : 1px solid #2A3254;"></div>
+                            <input type="submit" name="registerbutton" class="btnc" style="float : left; margin-top : 0; margin-right: 10px;" value="Inscription">
+                            <input type="button" value="Connexion" class="btnc btnc-primary" style="margin-top : 0; float: left;" data-toggle="modal" data-dismiss="modal" data-target="#loginmodal">
+							<div style="clear: both;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="site_wrapper">
+            <div class="container banner_wrapper">
+               <div class="row">
+                    <div id="banner">
+                        <img src="img/icons/banner-fireblast-tondu.png" alt="Fireblast" class="banner" width="440px">
+
+                        <div id="menu-connexion">
+                            <input type="button" class="btnc" onclick="" style="float : right; margin-left: 15px; margin-top : 0;" data-target="#registermodal" value="Inscription" data-toggle="modal">
+                            <input type="button" value="Connexion" class="btnc" data-toggle="modal" data-target="#loginmodal" style="float : right;  margin-top : 0;" data-toggle="modal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container" style="margin-bottom: 8px; margin-top: 20px;">
+               <div class="row">
+                    <div id="menu_section" class="">
+                        <div class="items_wrapper">
+                            <a class="item actif" href="#">Accueil</a>
+                            <a class="item " href="#">Guides</a>
+                            <a class="item" href="#">Forum</a>
+
+                            <br clear="left">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container container-main">    
+               <div class="row">
+                    <div class="col-md-9">
+                        <div id="content">
+                            <div class="row">
+                                <div class="featured">
+
+                                    <div class="col-md-4" style="padding-right: 0px;">                           
+                                        <div id="focus_1" class="focus" onclick="location.href='/article/questions-reponses-avec-ben-brode-sur-reddit-686'" style="">
+                                            <div class="vignette-large" style="background-image: url(http://www.hearthstone-decks.com/upload/news/2017/juillet/14/ben-brode-qa-trone-glace.jpg); margin : 0;"></div>
+                                            <div class="page-article">
+                                                <div class="article-titre">   
+                                                    <p itemprop="name">Q&amp;A avec Ben Brode</p>
+                                                    <div class="auteur">Plusieurs infos sur Hearthstone</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4" style="padding-right: 0px;">                 
+                                        <div id="focus_1" class="focus" onclick="location.href='/article/questions-reponses-avec-ben-brode-sur-reddit-686'" style="">
+                                            <div class="vignette-large" style="background-image: url(http://www.hearthstone-decks.com/upload/news/2017/juillet/15/rexxar-necrotraqueur-hearthstone.jpg); margin : 0;"></div>
+                                            <div class="page-article">
+                                                <div class="article-titre">   
+                                                    <p itemprop="name">Rexxar le nécrotraqueur</p>
+                                                    <div class="auteur">Vidéo de la carte Héros en jeux</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4" style="padding-right: 0px;">            
+                                        <div id="focus_1" class="focus" onclick="location.href='/article/questions-reponses-avec-ben-brode-sur-reddit-686'" style="">
+                                            <div class="vignette-large" style="background-image: url(http://www.hearthstone-decks.com/upload/news/2017/juillet/03/meta-juillet-2017-HS.jpg); margin : 0;"></div>
+                                            <div class="page-article">
+                                                <div class="article-titre">   
+                                                    <p itemprop="name">Decks de la méta</p>
+                                                    <div class="auteur">Pour la saison de juillet 2017</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="news_content">
+                                    <h2>Dernières actualités</h2>
+                                    
+                                    <div class="welln">
+                                        <div class="vignette" onclick="#" style="cursor : pointer;">
+                                            <img src="http://www.mamytwink.com/upload/news/2017/mars/29/heroes-2-0-vignette.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-entete-wrapper">
+                                            <div class="article-titre">
+                                                <div class="commentaires" onclick="#"><span>3</span></div>
+                                                <div class="tags"><span style="background-color: rgb(167, 126, 12);">WoW</span></div>
+                                                <h3 itemprop="name"><a href="#">Avenir : rendez-vous sur test.com</a></h3>
+                                            </div>
+                                            <div class="auteur">
+                                                Le <meta itemprop="datePublished" content="2017-03-29 17:21:25 "> 29/03/17 à 17:21, par <strong><span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Cypgain</span></span></strong>
+                                            </div>
+
+                                            <div class="article-entete">
+                                                Après plusieurs mois d'absence, nous nous exprimons au sujet de l'inactivité.
+                                            </div>
+                                        </div>
+
+                                        <div style="clear: both; height : 1px;"></div>
+
+                                    </div>
+                                    
+                                    <div class="welln">
+                                        <div class="vignette" onclick="#" style="cursor : pointer;">
+                                            <img src="http://www.mamytwink.com/upload/news/2017/mars/29/heroes-2-0-vignette.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-entete-wrapper">
+                                            <div class="article-titre">
+                                                <div class="commentaires" onclick="#"><span>3</span></div>
+                                                <h3 itemprop="name"><a href="#">Avenir : rendez-vous sur test.com</a></h3>
+                                            </div>
+                                            <div class="auteur">
+                                                Le <meta itemprop="datePublished" content="2017-03-29 17:21:25 "> 29/03/17 à 17:21, par <strong><span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Cypgain</span></span></strong>
+                                            </div>
+
+                                            <div class="article-entete">
+                                                Après plusieurs mois d'absence, nous nous exprimons au sujet de l'inactivité.
+                                            </div>
+                                        </div>
+
+                                        <div style="clear: both; height : 1px;"></div>
+
+                                    </div>
+                                    
+                                    <div class="welln">
+                                        <div class="vignette" onclick="#" style="cursor : pointer;">
+                                            <img src="http://www.mamytwink.com/upload/news/2017/mars/29/heroes-2-0-vignette.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-entete-wrapper">
+                                            <div class="article-titre">
+                                                <div class="commentaires" onclick="#"><span>3</span></div>
+                                                <h3 itemprop="name"><a href="#">Avenir : rendez-vous sur test.com</a></h3>
+                                            </div>
+                                            <div class="auteur">
+                                                Le <meta itemprop="datePublished" content="2017-03-29 17:21:25 "> 29/03/17 à 17:21, par <strong><span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Cypgain</span></span></strong>
+                                            </div>
+
+                                            <div class="article-entete">
+                                                Après plusieurs mois d'absence, nous nous exprimons au sujet de l'inactivité.
+                                            </div>
+                                        </div>
+
+                                        <div style="clear: both; height : 1px;"></div>
+
+                                    </div>
+                                    
+                                    <div class="welln">
+                                        <div class="vignette" onclick="#" style="cursor : pointer;">
+                                            <img src="http://www.mamytwink.com/upload/news/2017/mars/29/heroes-2-0-vignette.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-entete-wrapper">
+                                            <div class="article-titre">
+                                                <div class="commentaires" onclick="#"><span>3</span></div>
+                                                <h3 itemprop="name"><a href="#">Avenir : rendez-vous sur test.com</a></h3>
+                                            </div>
+                                            <div class="auteur">
+                                                Le <meta itemprop="datePublished" content="2017-03-29 17:21:25 "> 29/03/17 à 17:21, par <strong><span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Cypgain</span></span></strong>
+                                            </div>
+
+                                            <div class="article-entete">
+                                                Après plusieurs mois d'absence, nous nous exprimons au sujet de l'inactivité.
+                                            </div>
+                                        </div>
+
+                                        <div style="clear: both; height : 1px;"></div>
+
+                                    </div>
+                                    
+                                    <div class="welln">
+                                        <div class="vignette" onclick="#" style="cursor : pointer;">
+                                            <img src="http://www.mamytwink.com/upload/news/2017/mars/29/heroes-2-0-vignette.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-entete-wrapper">
+                                            <div class="article-titre">
+                                                <div class="commentaires" onclick="#"><span>3</span></div>
+                                                <h3 itemprop="name"><a href="#">Avenir : rendez-vous sur test.com</a></h3>
+                                            </div>
+                                            <div class="auteur">
+                                                Le <meta itemprop="datePublished" content="2017-03-29 17:21:25 "> 29/03/17 à 17:21, par <strong><span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Cypgain</span></span></strong>
+                                            </div>
+
+                                            <div class="article-entete">
+                                                Après plusieurs mois d'absence, nous nous exprimons au sujet de l'inactivité.
+                                            </div>
+                                        </div>
+
+                                        <div style="clear: both; height : 1px;"></div>
+                                        
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="row" style="text-align: center; margin-bottom: 10px;"><input type="button" class="btnc" onclick="" style="margin: auto;" value="Chargez les news suivantes"></div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-3">
+                        <div id="menu">
+                            <div class="widget">
+                                <h3 style="margin-bottom: 5px;">Guides</h3>
+                                
+                                <a class="guide" href="#" style="background-image : url('http://www.mamytwink.com/upload/news/2017/mars/29/heroes-2-0-vignette.jpg'); background-position: center;">
+                                    <div class="texte">
+                                        <div class="titre">Guide du débutant</div>
+                                        <div class="desc">Le guide pour récupérer le jeu</div>
+                                    </div>
+                                </a>
+                                
+                                <a class="guide" href="#" style="background-image : url('http://www.mamytwink.com/upload/news/2017/mars/29/heroes-2-0-vignette.jpg'); background-position: center;">
+                                    <div class="texte">
+                                        <div class="titre">Guide des montures</div>
+                                        <div class="desc">Le guide pour récupérer les montures</div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="widget">
+                                <h3 style="margin-bottom: 5px;">Réseaux sociaux</h3>
+                                
+                                <div class="widget_content">
+                                    <button class="ui facebook button" style="width: 100%; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
+                                      <i class="facebook icon"></i>
+                                      Facebook
+                                    </button>
+                                    <button class="ui twitter button" style="width: 100%; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
+                                      <i class="twitter icon"></i>
+                                      Twitter
+                                    </button>
+                                    
+                                    <button class="ui youtube button" style="width: 100%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
+                                      <i class="youtube icon"></i>
+                                      YouTube
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="container">
+                   
+                    <div class="box">
+                        <div class="footer_title">Réseau Fireblast</div>	
+                        <p class="footer_text"><i>Wow.Fireblast.com</i> est un site du réseau Fireblast. Thème, design et code réalisés par Cypgain. ©2017 Fireblast.<br/>
+                        <a href="http://www.heroes-strategie.com/contact">Contact</a></p>
+    			    </div>
+              
+                    <div class="box boxnone">
+                        <div class="footer_title">World of Warcraft</div>	
+                        <p class="footer_text">World of Warcraft et Blizzard Entertainment sont des marques ou des marques déposées de Blizzard Entertainment, Inc. aux États-Unis d’Amérique et/ou dans d’autres pays.</p>
+    			    </div>
+              
+                    <div class="box boxnone">
+                        <div class="footer_title">Partenaires</div>	
+                        <p class="footer_text"></p>
+    			    </div>
+               
+                </div>
+            </div>
+        </div>
+        
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/core.js"></script>
+    </body>
+</html>
